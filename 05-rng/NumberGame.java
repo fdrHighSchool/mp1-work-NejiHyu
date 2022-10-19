@@ -28,7 +28,7 @@ public class NumberGame
         else {
             int number =(int)(Math.random() * 101);  // 0 to 100
         }
-        int mysteryNumber = 5; // place-holder for now
+        int mysteryNumber = (int)(Math.random() * (maximum-minimum+1)+min); // place-holder for now
 
         System.out.println(mysteryNumber);
 
@@ -39,11 +39,11 @@ public class NumberGame
         if(playerGuess != mysteryNumber) {
             // if the player guessed too low
             if(playerGuess < mysteryNumber) {
-                System.out.println("You were off by " + (mysteryNumber - playerGuess)+ " more than the result.");
+                System.out.println("You were off by " + (mysteryNumber - playerGuess)+ " more than the number.");
             } // end inner if statement
             // if the player didn't guess too low (meaning, incorrect and too high!)
             else {
-                System.out.println("You were off by " + (playerGuess - mysteryNumber)+ " less than the result.");
+                System.out.println("You were off by " + (playerGuess - mysteryNumber)+ " less than the number.");
             } // end inner else statement
         } // end outer if statement
         // if the player didn't guess incorrectly (meaning, correct guess)

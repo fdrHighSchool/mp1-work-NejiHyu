@@ -30,12 +30,10 @@ public class UserName {
 
     s.close();
     generatePassword();
-  } // end main method
-}
-
-
-/*
-   * Name: initialize
+    
+  } // end initialize method
+ 
+  /* Name: initialize
    * Purpose: send back the first character (inital) of a name
    * Input: a name (String)
    * Return: a single character (String)
@@ -50,14 +48,14 @@ public class UserName {
    * Input: a name (String)
    * Return: a single character (String)
    */
-  public static string generatePassword(int length) {
-      String password= "";
-      int rand = (char)(int)(Math.random()*(90-65+1)+65);
-      char c = (char)rand;
-      system.out.println(rand + " " +c);
+  public static String generatePassword(int length) {
+    for (int i = 0; i<length; i++);
+    String password= "";
+    int rand = (char)(int)(Math.random()*(90-65+1)+65);
+    char c = (char)rand;
+    System.out.println(rand + " " +c);
+      
+    return password;
+    }// end of generate password method
+}// end of class method
 
-      
-      
-      return password;
-  }// end of generate password method
-} // end class
